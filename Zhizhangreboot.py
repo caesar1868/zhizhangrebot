@@ -133,8 +133,8 @@ def _(msg):
     TMessage = msg['Content']
     
     #print(TMessage)
-    #print(TMessage.startswith('@WESENDMESSAGE'))
-    if TMessage.startswith('@WESENDMESSAGE'):
+    #print(TMessage.startswith('@SEND'))
+    if TMessage.startswith('@SEND'):
         #rooms = itchat.get_chatrooms()
 
         with open(path,'r',encoding='utf-8') as file:
@@ -145,7 +145,7 @@ def _(msg):
         #wename = itchat.search_chatrooms()
         #print(name)
         #print(rooms)
-        content = TMessage.replace('@WESENDMESSAGE', '').strip()+'\n 【此消息由{0}机器人发送】'.format(rebotName)
+        content = TMessage.replace('@SEND', '').strip()+'\n 【此消息由{0}机器人发送】'.format(rebotName)
         #print(message)
         #print(rooms)
         messagelist = []
