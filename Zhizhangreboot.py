@@ -31,7 +31,8 @@ path = currentPath / 'WeChatQun.txt'
 
 #过滤文件名的非法字符
 fileSign = '\\ / : * ? " < > | \n \t'.split(' ')
-
+#机器人名称
+rebotName = '智障一号'
 
 #图灵机器人的请求消息体
 request_message = '''{
